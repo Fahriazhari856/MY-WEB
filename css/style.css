@@ -83,7 +83,23 @@ section{
 
 .home-img img{
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .home-content h3{ 
     font-size: 3.2rem;
@@ -106,6 +122,7 @@ span{
 
 .home-content p{
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .social-media a {
@@ -175,6 +192,7 @@ span{
     font-size: 1.6rem;
     line-height: 1.6;
     margin: 1rem 0 3rem;
+    text-align: justify;
 }
 
 .services h2{
@@ -381,6 +399,7 @@ span{
     .footer {
         padding: 2rem 3%;
     }
+
 }
 
 @media (max-width: 768px){
@@ -463,8 +482,7 @@ span{
         font-size: 50%;
     }
 
-    .input-box{
+    .contact form .input-box input{
         width: 100%;
-        grid-template-columns: 1fr;
     }
 }

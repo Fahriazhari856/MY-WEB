@@ -369,7 +369,7 @@ section.school h1 {
   .home-content h1 {
     font-size: 5rem;
   }
-  
+
   .home-content p {
     padding: 20px;
   }
@@ -442,7 +442,7 @@ section.school h1 {
     font-size: 30px;
     padding-top: 80px;
   }
-  .card-work{
+  .card-work {
     width: 110%;
     border-radius: 60px;
   }
@@ -452,6 +452,27 @@ section.school h1 {
 @media (max-width: 617px) {
   .portofolio-container {
     grid-template-columns: 1fr;
+  }
+
+  .img-experience {
+    width: 230px;
+    height: 170px;
+    border-radius: 50px;
+  }
+
+  .row1 {
+    padding: 40px 50px 82px 53px;
+    gap: 90px;
+  }
+
+  .row {
+    padding: 0px 70px 69px 38px;
+    gap: 90px;
+  }
+
+  .judul-image {
+    font-size: 13px;
+    padding-top: 20px;
   }
 }
 

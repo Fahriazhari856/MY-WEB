@@ -405,7 +405,7 @@ section.school h1 {
 
   /* PREVIOUS SCHOOL */
   section.school h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .judul-image {
@@ -422,24 +422,24 @@ section.school h1 {
   }
 
   .img-experience {
-    width: 300px;
-    height: 210px;
+    width: 250px;
+    height: 170px;
     border-radius: 50px;
   }
   /* row */
   .row {
-    padding: 0px 70px 69px 65px;
+    padding: 0px 70px 69px 68px;
     gap: 90px;
   }
   .row1 {
-    padding: 40px 70px 69px 45px;
+    padding: 40px 70px 69px 76px;
     gap: 90px;
   }
   /* IMG-SCHOOL */
 
   /* WORK EXPERIENCE */
   .judul-experience {
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 80px;
   }
   .card-work{

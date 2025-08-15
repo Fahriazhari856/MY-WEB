@@ -428,11 +428,11 @@ section.school h1 {
   }
   /* row */
   .row {
-    padding: 0px 70px 69px 85px;
+    padding: 0px 70px 69px 65px;
     gap: 90px;
   }
   .row1 {
-    padding: 40px 70px 69px 65px;
+    padding: 40px 70px 69px 45px;
     gap: 90px;
   }
   /* IMG-SCHOOL */

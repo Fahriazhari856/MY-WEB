@@ -458,6 +458,7 @@ section.school h1 {
   .judul-experience {
     font-size: 30px;
     text-align: center;
+    padding-top: 30px;
   }
 
   .card-work {
@@ -469,8 +470,8 @@ section.school h1 {
   }
 
   .card-work img {
-    width: 195px;
-    height: 180px;
+    width: 185px;
+    height: 130px;
     border-radius: 15px;
     padding: 0;
   }

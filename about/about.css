@@ -467,10 +467,10 @@ section.school h1 {
     gap: 30px;
     padding: 2px 0px 12px 2px;
     text-align: left;
-    width: 400px;
+    width: 370px;
   }
   .card-work img {
-    width: 395px;
+    width: 365px;
     border-radius: 15px;
     display: flex;
     align-items: center;

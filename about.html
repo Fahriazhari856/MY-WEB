@@ -4,110 +4,151 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Personal Portfolio Website Design | Codehal</title>
+  <title>Responsive Personal Portfolio | Fahri Azhari</title>
 
-  <!-- Box Icons -->
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <!-- Box Icons (Correct CDN) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="about/about.css" />
+  <link rel="stylesheet" href="home/style.css" />
 </head>
 <body>
 
-  <!-- Header Design -->
+  <!-- Header -->
   <header class="header">
     <a href="#" class="logo">FAHRI AZHARI</a>
     <i class='bx bx-menu' id="menu-icon"></i> 
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
-      <a href="#services">portofolio</a>
-      <a href="#portofolio">project</a>
+      <a href="#services">Portofolio</a>
+      <a href="#portofolio">Project</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Home Section -->
-
-<div class="home-img">
-  <img src="images//1Home.png" alt="">
-</div>
-
   <section class="home" id="home">
     <div class="home-content">
       <h3>Hello, It's me</h3>
       <h1>Fahri Azhari</h1>
-      <p class="btn-backround">Saya adalah seorang mahasiswa dan kreator digital yang antusias dalam dunia pengembangan web dan desain antarmuka. Dengan keahlian di bidang frontend development dan desain grafis, saya berfokus menciptakan tampilan yang tidak hanya menarik secara visual, tetapi juga fungsional dan responsif. Saya percaya bahwa kombinasi antara estetika dan teknologi dapat memberikan pengalaman digital yang optimal bagi pengguna.</p>
+      <h3>I'm a <span class="multiple-text"></span></h3>
+      <p>Saya adalah seorang mahasiswa dan kreator digital yang antusias dalam dunia pengembangan web dan desain antarmuka...</p>
+      
+      <div class="social-media">
+        <a href="https://www.instagram.com/_fahriazhari/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/Fahriazhari856"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/muh-fahri-azhari-ptik-a-697428329/"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://wa.me/qr/D7VEKRAX52KUE1"><i class='bx bxl-whatsapp'></i></a>
+      </div>
+      <a href="images/CV.jpg" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="images/1Home.png" alt="Foto Fahri Azhari">
+    </div>
   </section>
 
-  <section class="school">
-    <h1>Previous School</h1>
-    <div class="row">
-      <div class="img-slide">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQefc7DrE9H9q3PKFDaVYw81XO7_OdclGA0QA&s" class="img-school" alt="...">
-        <h2 class="judul-image">SD NEGERI CENTER MANGALLI</h2>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/1about.png" alt="Tentang Saya">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>Saya Fahri, mahasiswa baru di Universitas Negeri Makassar yang memiliki minat dan bakat di bidang desain grafis, editing, fotografi, dan videografi...</p>
+      <a href="about.html" class="btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2 class="heading">Portofolio</h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Developer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <a href="web-dev.html" class="btn">Read more</a>
       </div>
-      <div class="img-slide">
-        <img src="https://xposetv.live/wp-content/uploads/2024/11/IMG_20241102_002355.jpg" class="img-school" alt="...">
-        <h2 class="judul-image">SMP NEGERI 1 PALLANGGA</h2>
+
+      <div class="services-box">
+        <i class='bx bx-palette'></i>
+        <h3>Graphic Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <a href="portofolio.html" class="btn">Read more</a>
       </div>
-      <div class="img-slide">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUTWXXf8u9l0n5QzoC3Y3FD9Vo7IKarcd4Lg&s" class="img-school" alt="...">
-        <h2 class="judul-image">SMK NEGERI 4 GOWA</h2>
+
+      <div class="services-box">
+        <i class='bx bx-camera'></i>
+        <h3>Content Creator</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <a href="konten-kreator.html" class="btn">Read more</a>
+      </div>
     </div>
-      <div class="img-slide">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUikbX-3fTz6Q4zwP22TanyPsWkqYhjT4w_Q&s" class="img-school" alt="...">
-        <h2 class="judul-image">UNIVERSITAS NEGERI MAKASSAR</h2>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portofolio" id="portofolio">
+    <h2 class="heading">Project</h2>
+    <div class="portofolio-container">
+
+      <div class="portofolio-box">
+        <img src="images/portfolio1.jpg" alt="Project 1">
+        <div class="portofolio-layer">
+          <h4>Experience Work</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portofolio-box">
+        <img src="images/portfolio2.jpg" alt="Project 2">
+        <div class="portofolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <!-- Tambahkan portfolio lain sesuai kebutuhan -->
+
     </div>
-</section>
+  </section>
 
-<section class="experience">
-  <h1 class="judul-experience">Work Experience</h1>
-  <div class="row1">
-  <div class="card-work">
-    <div class="background-slide">
-      <img src="../images/3.jpg" class="img-experience" alt="Kalla Group">
-      <h2 class="judul-image">KALLA GROUP</h2>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number" required>
+        <input type="text" placeholder="Email Subject" required>
+      </div>
+      <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>&copy; 2025 by _fahriazhari | All Rights Reserved</p>
     </div>
-  </div>
+  </footer>
 
-  <div class="card-work">
-    <div class="background-slide">
-      <img src="https://down-id.img.susercontent.com/file/id-11134216-7r98r-lqd0h5twujha6a" class="img-experience" alt="Freelance Insani Skincare">
-      <h2 class="judul-image"> INSANI DESIGN </h2>
-    </div>
-  </div>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-  <div class="card-work">
-    <div class="background-slide">
-      <img src="../images/2.jpg" class="img-experience" alt="CV Frame Indonesia Group">
-      <h2 class="judul-image">CV FRAME   INDONESIA </h2>
-    </div>
-  </div>
+  <!-- Typed JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <div class="card-work">
-    <div class="background-slide">
-      <img src="../1.jpg" class="img-experience" alt="PT Roxy Maharewa">
-      <h2 class="judul-image">PT ROXY MAHAREWA</h2>
-    </div>
-  </div>
-</div>
-
-
-</section>
-
-
-<!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="about/about.js"></script>
-
+  <!-- Custom JS -->
+  <script src="home/script.js"></script>
 </body>
-
-
-
+</html>

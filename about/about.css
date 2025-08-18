@@ -388,7 +388,8 @@ section.school h1 {
   }
 
   .home-content p {
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
+    font-size: 14px;
   }
 
   .home-img img {
@@ -433,7 +434,7 @@ section.school h1 {
 
   /* IMG-SCHOOL */
   .img-school {
-    width: 389px;
+    width: 359px;
     height: 240px;
     border-radius: 20px;
   }
@@ -508,6 +509,10 @@ section.school h1 {
     scroll-behavior: smooth;
     gap: 20px;
     flex-direction: row;
+  }
+
+  p.socrates{
+    text-align: right;
   }
 
   .judul-image {

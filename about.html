@@ -9,6 +9,7 @@
   <!-- Box Icons -->
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./about/about.css" />
@@ -44,19 +45,19 @@
   <section class="school">
     <h1>Previous School</h1>
     <div class="row">
-      <div class="img-slide">
+      <div data-aos="fade-up" class="img-slide hidden">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQefc7DrE9H9q3PKFDaVYw81XO7_OdclGA0QA&s" class="img-school" alt="...">
         <h2 class="judul-image">SD NEGERI CENTER MANGALLI</h2>
       </div>
-      <div class="img-slide">
+      <div data-aos="fade-up" class="img-slide">
         <img src="https://xposetv.live/wp-content/uploads/2024/11/IMG_20241102_002355.jpg" class="img-school" alt="...">
         <h2 class="judul-image">SMP NEGERI 1 PALLANGGA</h2>
       </div>
-      <div class="img-slide">
+      <div data-aos="fade-up" class="img-slide">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUTWXXf8u9l0n5QzoC3Y3FD9Vo7IKarcd4Lg&s" class="img-school" alt="...">
         <h2 class="judul-image">SMK NEGERI 4 GOWA</h2>
     </div>
-      <div class="img-slide">
+      <div data-aos="fade-up" class="img-slide">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUikbX-3fTz6Q4zwP22TanyPsWkqYhjT4w_Q&s" class="img-school" alt="...">
         <h2 class="judul-image">UNIVERSITAS NEGERI MAKASSAR</h2>
     </div>
@@ -64,7 +65,7 @@
 
 <section class="experience">
   <h1 class="judul-experience">Work Experience</h1>
-  <div class="row1">
+  <div data-aos="fade-up" class="row1">
   <div class="card-work">
     <div class="background-slide">
       <img src="./images/3.jpg" class="img-experience" alt="Kalla Group">
@@ -99,24 +100,38 @@
 
 <!-- Section Skills -->
 <section class="skills-section">
-  <h2>SKILLS</h2>
-  <div class="skills-container">
-    <div class="skill-card">
-      <p>Skill 1</p>
-    </div>
-    <div class="skill-card">
-      <p>Skill 2</p>
-    </div>
-    <div class="skill-card">
-      <p>Skill 3</p>
-    </div>
-    <div class="skill-card">
-      <p>Skill 4</p>
-    </div>
-    <div class="skill-card">
-      <p>Skill 5</p>
+  <h2 class="Judul-skill">SKILLS</h2>
+  <div data-aos="fade-right" class="skills-container">
+  <div class="card">
+    <img src="./images/portfolio3.jpg" alt="gambar" class="card-img">
+    <div class="card-text">
+      <h2>DESIGN GRAFIS</h2>
+      <p>
+        Ini adalah deskripsi singkat di samping gambar.  
+        Kamu bisa menambahkan teks yang lebih panjang sesuai kebutuhan.
+      </p>
     </div>
   </div>
+
+  <div class="card">
+    <img src="./images/portfolio1.jpg" alt="gambar" class="card-img">
+    <div  class="card-text">
+      <h2>EDITING</h2>
+      <p>Ini adalah deskripsi singkat di samping gambar.  
+        Kamu bisa menambahkan teks yang lebih panjang sesuai kebutuhan.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./images/portfolio2.jpg" alt="gambar" class="card-img">
+    <div class="card-text">
+      <h2>WEB DEVELOPERT</h2>
+      <p>Ini adalah deskripsi singkat di samping gambar.  
+        Kamu bisa menambahkan teks yang lebih panjang sesuai kebutuhan.</p>
+    </div>
+  </div>
+</div>
+
 </section>
 
 
@@ -129,5 +144,10 @@
 
     <!-- custom js -->
     <script src="about/about.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>

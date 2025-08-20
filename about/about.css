@@ -193,9 +193,14 @@ section.experience {
   text-align: center;
 }
 .home-content p {
-  font-size: 23px;
+  font-size: 19px;
   text-align: justify;
-  padding: 31px 0px 50px 0px;
+  padding: 31px 40px;
+  background-color: #2f3136; /* warna abu gelap */
+  border-radius: 15px; /* sudut melengkung */
+  border: 1px solid #3a3c40; /* garis tipis */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* efek bayangan */
+  color: #fff; /* biar kontras sama background */
 }
 
 .home-content h3:nth-of-type(2) {
@@ -322,52 +327,51 @@ section.school h1 {
 /* NEW SECTION */
 /* Section Skills */
 
+.Judul-skill {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
 section.skills-section {
   padding: 70px 0px;
 }
 
-.skills-section {
-  background-color: #3d3d47; /* warna abu tua sesuai gambar */
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.skills-section h2 {
-  color: white;
-  font-size: 46px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
 .skills-container {
   display: flex;
-  justify-content: flex-start; /* biar scroll mulai dari kiri */
-  width: 100%;
-  gap: 50px;
-  overflow-x: auto; /* scroll ke kanan */
-  overflow-y: hidden; /* hilangkan scroll vertikal */
-  padding-bottom: 10px; /* kasih jarak biar scroll bar gak nempel */
-  scroll-behavior: smooth; /* scroll halus */
-  padding-left: 90px;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge lama */
+  flex-direction: column;
+  gap: 20px; /* kasih jarak antar card */
+  padding: 20px;
 }
 
-.skills-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
-.skill-card {
-  background-color: white;
-  flex: 0 0 auto;
-  width: 580px;
-  height: 470px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.card {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: 500;
+  background: #24353cff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 24%);
+  padding: 20px;
+  gap: 20px; /* jarak antara gambar & teks */
+}
+
+.card-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-text {
+  flex: 1; /* biar teks menyesuaikan lebar */
+  color: #ffffffff;
+}
+
+.card-text P {
+  font-size: 20px;
+}
+.card-text H2 {
+  font-size: 30px;
 }
 
 @media (max-width: 991px) {
@@ -545,12 +549,27 @@ section.skills-section {
     width: 100%;
     gap: 50px;
     padding-bottom: 10px;
-    padding-left: 70px;
+    padding-left: 24px;
   }
   .skill-card {
     width: 350px;
     height: 250px;
     font-weight: 500;
+  }
+
+  .card {
+    margin: -18px 0px;
+  }
+
+  .card-text P {
+    font-size: 10px;
+  }
+  .card-text H2 {
+    font-size: 25px;
+  }
+  .card-img {
+    width: 120px;
+    height: 120px;
   }
 
   .img-experience {

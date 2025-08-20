@@ -487,9 +487,9 @@ section.skills-section {
 
   /* IMG-SCHOOL */
   .img-school {
-    width: 359px;
-    height: 240px;
-    border-radius: 20px;
+    width: 143px;
+    height: 140px;
+    border-radius: 200px;
   }
 
   .img-experience {
@@ -501,7 +501,7 @@ section.skills-section {
   /* row */
   .row {
     padding: 0px 70px 69px 68px;
-    gap: 90px;
+    gap: 10px;
   }
 
   .row1 {
@@ -579,7 +579,7 @@ section.skills-section {
   }
 
   .row {
-    padding: 0px 35px 70px 35px;
+    padding: 0px 35px 50px 35px;
     overflow-x: auto; /* aktifkan scroll horizontal */
     scroll-behavior: smooth; /* geser halus */
   }

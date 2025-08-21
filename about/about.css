@@ -164,8 +164,8 @@ section {
 section.experience {
   padding: 2rem 0;
   min-height: auto;
-  background: #2e3239;
-  box-shadow: 0px -16px 85px rgba(0, 0, 0, 0.3);
+  background: #1f242d;
+  box-shadow: 0px -16px 85px rgba(0, 0, 0, 0);
 }
 
 .judul-experience {
@@ -210,7 +210,8 @@ section.experience {
 section.school {
   min-height: 60vh;
   padding: 5rem 0% 2rem;
-  background: #2e3239;
+  background: #2a2f37ff;
+  box-shadow: 0px -16px 85px rgba(0, 0, 0, 0.3);
   text-align: center; /* Judul <h1> di tengah */
 }
 
@@ -256,7 +257,7 @@ section.school h1 {
   position: relative;
   z-indez: 2;
   text-align: center;
-  padding: 0px 40px;
+  padding: 0px 12px;
   font-size: 20px;
   padding-top: 10px;
 }
@@ -271,7 +272,6 @@ section.school h1 {
 
 .card-work {
   flex: 1 1 30rem;
-  background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
@@ -279,11 +279,12 @@ section.school h1 {
   transition: 0.5s ease;
   width: 30%;
   height: auto;
+  background: #24353cff;
 }
 
 .card-work:hover,
 .card-work:active {
-  border-color: #00aaffff;
+  border-color: #6bceffff;
   transform: scale(1.03);
 }
 
@@ -330,7 +331,7 @@ section.school h1 {
 .Judul-skill {
   text-align: left;
   padding-left: 30px;
-  font-size: 50px;
+  font-size: 40px;
   padding-bottom: 20px;
 }
 
@@ -518,14 +519,15 @@ section.skills-section {
   .card-work {
     display: flex;
     gap: 30px;
+    backround
     padding: 2px 0px 12px 2px;
     text-align: left;
-    width: 370px;
+    width: 198px;
   }
 
   .card-work img {
-    width: 185px;
-    height: 130px;
+            width: 135px;
+        height: 110px;
     border-radius: 15px;
     padding: 0;
   }
@@ -598,8 +600,14 @@ section.skills-section {
   }
 
   .judul-image {
-    font-size: 17px;
-    padding-top: 20px;
+    font-size: 10px;
+    padding-top: 12px;
+  }
+
+  .deskripsi{
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 7px;
   }
 }
 

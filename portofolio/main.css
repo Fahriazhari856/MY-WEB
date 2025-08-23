@@ -1,4 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
 
+:root {
   --bg-color: #1f242d;
   --second-bg-color: rgb(64, 64, 72);
   --text-color: rgb(255, 255, 255);

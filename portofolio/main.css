@@ -26,6 +26,104 @@ body {
   color: var(--text-color);
 }
 
+
+/* backround */
+        .network-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .network-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .network-line {
+            stroke: #64b5f6;
+            stroke-width: 1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .network-node {
+            fill: #64b5f6;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .network-node.active {
+            opacity: 1;
+            fill: #42a5f5;
+        }
+
+        .network-line.active {
+            opacity: 0.8;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { 
+                stroke-width: 1;
+                opacity: 0.8;
+            }
+            50% { 
+                stroke-width: 2;
+                opacity: 1;
+            }
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            z-index: 1000;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #64b5f6, #42a5f5, #1e88e5);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.1s ease;
+        }
+
+        /* Floating Particles */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: #64b5f6;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .section-content {
+                padding: 30px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        /* Content Sections */
+
+/* backround */
 .header {
   position: fixed;
   top: 0;

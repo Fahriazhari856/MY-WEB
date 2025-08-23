@@ -40,16 +40,16 @@ window.onscroll = () => {
 /*==================== scroll reveal ====================*/
 
 ScrollReveal({
-    // reset: true,
+    reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
 });
 
-ScrollReveal().reveal('.content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.about-img', { origin: 'left' });
-ScrollReveal().reveal('.about-content', { origin: 'right' });   
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });   
 
 
 /*==================== typed js ====================*/
@@ -60,3 +60,14 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+ 
+    let pos = 0;
+    function animateGradient() {
+      pos += 1;
+      if (pos > 400) pos = 0;
+      document.body.style.backgroundPosition = `${pos}% ${pos}%`;
+      requestAnimationFrame(animateGradient);
+    }
+    animateGradient();
+    
